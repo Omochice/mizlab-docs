@@ -9,6 +9,7 @@ code {
   background-color: $code-background-color;
   border: $border $border-color;
   border-radius: $border-radius;
+  font-family: 'Fira Mono', monospace;
 }
 
 // Avoid appearance of dark border around visited code links in Safari
