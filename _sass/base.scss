@@ -106,3 +106,27 @@ hr {
   background-color: $border-color;
   border: 0;
 }
+
+blockquote {
+  position: relative;
+  padding: 10px 15px 10px 15px;
+  box-sizing: border-box;
+  font-style: italic;
+  background: #f5f5f5;
+  color: #777777;
+  border-left: 4px solid #9dd4ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+blockquote p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
+}
