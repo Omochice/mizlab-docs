@@ -21,7 +21,7 @@ $ git clone git@github.com:<自分のユーザ名>/mizlab-docs.git
 同期を取ってから作業を始めるとよいでしょう。
 ```console
 fork元のリポジトリを`upstream`として登録する
-$ git remote add upstream https://github.com/Omochice/mizlab-docs.git
+$ git remote add upstream https://github.com/MizLab/mizlab-docs.git
 upstreamと同期する
 $ git fetch upstream
 $ git switch main 
@@ -42,12 +42,12 @@ $ git switch -c <branch-name>
    title: <title> # メニューやhtmlのタイトルになります
    has_children: <bool> # 子記事を持つかどうか（非必須）
    parent: <bool> # どの記事を親に持つか（非必須）
-    ---
+   ---
    
-    以下markdown形式で記事を記入できる
-    ```
-    mdファイルの先頭にyaml形式でオプションを書きます。
-    他にもオプションはあるようですが最低限必要なのはこれぐらいでしょう。
+   以下markdown形式で記事を記入できる
+   ```
+   mdファイルの先頭にyaml形式でオプションを書きます。
+   他にもオプションはあるようですが最低限必要なのはこれぐらいでしょう。
 
 1. 記事のレビュー
 ```console 
