@@ -30,10 +30,15 @@
   "ja-technical-writing/sentence-length": false,
   "ja-no-mixed-period": {
     "allowPeriodMarks": [
-      "、"
+      "、",
+      ".",
+      ","
     ],
     "allowEmojiAtEnd": true,
     "forceAppendPeriod": true,
-    "ja-technical-writing/sentence-length": false
-  }
+  },
+    "ja-technical-writing/sentence-length": false,
+    "ja-technical-writting/max-kanji-continuous-len": {
+        "allow": ["電子情報工学演習"]
+    }
 }
