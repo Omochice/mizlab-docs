@@ -4,10 +4,10 @@ title: 記事の書き方
 nav_order: 100
 ---
 
-現時点でわかっている記事の書き方を記します。
+現時点(2021/05/15)での記事の書き方を記します。
 
 1. このリポジトリをforkする。
-[https://docs.github.com/ja/github/getting-started-with-github/fork-a-repo]()を参考に自分のgithubにこのリポジトリをforkしてください。
+[github謹製のフォークの作り方](https://docs.github.com/ja/github/getting-started-with-github/fork-a-repo)を参考に自分のリポジトリに`MizLab/mizlab-docs`をフォークする。
 
 1. forkしたリポジトリを手元にクローンする。
 ```console
@@ -53,8 +53,22 @@ $ git switch -c <branch-name>
 ```console 
 $ docker-compose up
 ```
-このコマンドでdockerコンテナ内でjekyllが起動し、4000番ポートでサーバが起動します。
+このコマンドでdockerコンテナ内にjekyllが起動し、4000番ポートでサーバが起動します。
 [localhost:4000]()に接続すればこのページと同等のものが見れます。
+
+1. 記事の表現の確認
+`textlint`で日本語文書の表現の確認をします。
+`textlint`がインストールされていない場合、次のコマンドでインストールします。
+```console
+# node.jsがインストールされている前提で記述しています。
+$ npm install -g yarn # 
+$ yarn 
+```
+インストールができたら、次のコマンドで表現を確認します。
+```console
+$ textlint <作成したmarkdownファイル>
+```
+指摘されている部分があれば、修正をします。
 
 1. 作業をコミットする。
 ```console
