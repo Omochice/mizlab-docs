@@ -6,18 +6,18 @@ nav_order: 100
 
 現時点(2021/05/15)での記事の書き方を記します。
 
-1. このリポジトリをforkする。
-[github謹製のフォークの作り方](https://docs.github.com/ja/github/getting-started-with-github/fork-a-repo)を参考に自分のリポジトリに`MizLab/mizlab-docs`をフォークする。
+1. このリポジトリを fork する。
+[github謹製のフォークの作り方](https://docs.github.com/ja/github/getting-started-with-github/fork-a-repo)を参考に自分のリポジトリに `MizLab/mizlab-docs` をフォークする。
 
-1. forkしたリポジトリを手元にクローンする。
+1. fork したリポジトリを手元にクローンする。
 ```console
 $ git clone https://github.com/<自分のユーザ名>/mizlab-docs.git
 または
 $ git clone git@github.com:<自分のユーザ名>/mizlab-docs.git 
 ```
 
-1. fork元のリポジトリを登録する。
-このリポジトリの`main`ブランチが公開用のブランチです。
+1. fork 元のリポジトリを登録する。
+このリポジトリの `main` ブランチが公開用のブランチです。
 同期を取ってから作業を始めるとよいでしょう。
 ```console
 fork元のリポジトリを`upstream`として登録する
@@ -46,14 +46,14 @@ $ git switch -c <branch-name>
    
    以下markdown形式で記事を記入できる
    ```
-   mdファイルの先頭にyaml形式でオプションを書きます。
+   md ファイルの先頭に yaml 形式でオプションを書きます。
    他にもオプションはあるようですが最低限必要なのはこれぐらいでしょう。
 
 1. 記事のレビュー
 ```console 
 $ docker-compose up
 ```
-このコマンドでdockerコンテナ内にjekyllが起動し、4000番ポートでサーバが起動します。
+このコマンドで docker コンテナ内に jekyll が起動し、4000 番ポートでサーバが起動します。
 [localhost:4000]()に接続すればこのページと同等のものが見れます。
 
 1. 記事の表現の確認
@@ -77,8 +77,8 @@ $ git commit
 ```
 コミットの粒度は細かいほうがいいと言われますが自由です。
 ただし、複数作業を同一コミットに入れるのは望ましくないです。
-また、issueに対応して解決した場合、コミットメッセージに`close #<issue番号>`などを入れるとgithub側でうまいこと処理してくれます。
+また、issue に対応して解決した場合、コミットメッセージに `close #<issue番号>` などを入れると github 側でうまいこと処理してくれます。
 
 1. プルリクを作成する。
 [プルリクエストの作成方法](https://docs.github.com/ja/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)等を参照。
-ここで、textlintでlintingを行い、通ったものをmainブランチにマージします。（予定）
+ここで、textlint で linting を行い、通ったものを main ブランチにマージします。（予定）
