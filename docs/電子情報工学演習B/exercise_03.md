@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 電子情報工学演習B 第3回
+parent: 電子情報工学演習B
 ---
 
 # 電子情報工学演習B 第3回
@@ -26,16 +27,16 @@ title: 電子情報工学演習B 第3回
         ```console
         $ gzip -d uniprot_sprot.fasta.gz
         ```
-    - テキストファイルなのに300MBくらいあるので閲覧するときは注意する
+    - テキストファイルなのに 300MB くらいあるので閲覧するときは注意する
         ```console
         $ less uniprot_sprot.fasta
         ```
 
 ## 解法のヒント
 
-- 項目数と残基数はループ内で数え上げすればOK
+- 項目数と残基数はループ内で数え上げすれば OK
 - 平均と標準偏差も定義を知っていればすぐ算出できる
-    - Rubyで平方根を計算するときは `Math` モジュールを用いる
+    - Ruby で平方根を計算するときは `Math` モジュールを用いる
         ```ruby
         sd = Math.sqrt(根号の中身)
         ```
@@ -44,7 +45,7 @@ title: 電子情報工学演習B 第3回
 
 ### FASTA形式について
 
-詳しい説明は [NCBI BLAST topics](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp) にありますが、とりあえず [Wikipedia](https://ja.wikipedia.org/wiki/FASTA) を読んでおくと分かりやすいと思います。
+詳しい説明は [NCBI BLAST topics](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp) にありますが、とりあえず [Wikipedia](https://ja.wikipedia.org/wiki/FASTA) を読んでおくと分かりやすいでしょう。
 
 > FASTA は、"FAST-Aye"（ファストエー）と発音する。
 
@@ -52,7 +53,7 @@ title: 電子情報工学演習B 第3回
 
 ### 標準偏差
 
-各数量と平均の差を**偏差**(deviation)という。偏差の2乗の平均値を**分散**(variance)といい、データの散らばり具合を示す指標として用いられる。また、分散の正の平方根を**標準偏差**(standard deviation)という。
+各数量と平均の差を**偏差**(deviation)という。偏差の 2 乗の平均値を**分散**(variance)といい、データの散らばり具合を示す指標として用いられる。また、分散の正の平方根を**標準偏差**(standard deviation)という。
 ここで標準偏差 $$s$$ は式 (1) のように表される。
 
 $$
