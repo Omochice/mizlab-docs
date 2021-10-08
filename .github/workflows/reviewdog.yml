@@ -1,5 +1,12 @@
 name: reviewdog
-on: [pull_request]
+on:
+  push:
+    paths:
+      - "**/*.md"
+  pull_request:
+    paths:
+      - "**/*.md"
+
 jobs:
   textlint:
     name: runner / textlint
