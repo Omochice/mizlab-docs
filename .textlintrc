@@ -17,28 +17,32 @@
         "allow": [
           "か"
         ]
+      },
+      "max-kanji-continuous-len": {
+        "max": 7,
+        "allow": [
+          "電子情報工学演習",
+          "生体生命情報学"
+        ]
+      },
+      "ja-no-mixed-period": {
+        "periodMark": "。",
+        "allowPeriodMarks": [
+          ":",
+          "、",
+          ".",
+          ","
+        ],
+        "allowEmojiAtEnd": true
+      },
+      "sentence-length": false,
+      "ja-unnatural-alphabet": {
+        "allow": [
+            "偏差s"
+        ]
       }
     },
     "preset-ja-spacing": true,
     "ja-space-around-code": {}
-  },
-  "ja-technical-writing/ja-no-mixed-period": {
-    "allowPeriodMarks": [
-      ":"
-    ]
-  },
-  "ja-technical-writing/sentence-length": false,
-  "ja-no-mixed-period": {
-    "allowPeriodMarks": [
-      "、",
-      ".",
-      ","
-    ],
-    "allowEmojiAtEnd": true,
-    "forceAppendPeriod": true,
-  },
-    "ja-technical-writing/sentence-length": false,
-    "ja-technical-writting/max-kanji-continuous-len": {
-        "allow": ["電子情報工学演習"]
-    }
+  }
 }
