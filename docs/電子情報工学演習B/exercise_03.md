@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 電子情報工学演習B 第3回
+parent: 電子情報工学演習B
 ---
 
 # 電子情報工学演習B 第3回
@@ -44,7 +45,7 @@ title: 電子情報工学演習B 第3回
 
 ### FASTA形式について
 
-詳しい説明は [NCBI BLAST topics](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp) にありますが、とりあえず [Wikipedia](https://ja.wikipedia.org/wiki/FASTA) を読んでおくと分かりやすいと思います。
+詳しい説明は [NCBI BLAST topics](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=BlastHelp) にありますが、とりあえず [Wikipedia](https://ja.wikipedia.org/wiki/FASTA) を読んでおくと分かりやすいでしょう。
 
 > FASTA は、"FAST-Aye"（ファストエー）と発音する。
 

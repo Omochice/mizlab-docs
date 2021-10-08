@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 電子情報工学演習B 第1回
+parent: 電子情報工学演習B
 ---
 
 # {{ page.title }}
