@@ -32,6 +32,7 @@ parent: 電子情報工学演習B
     # => {a: 10, b: 50, c: 40}
     ```
 * [`Bio::Sequence::AA.codes`](http://bioruby.org/rdoc/Bio/Sequence/AA.html#method-i-codes)
+    アミノ酸の 1 文字コードを 3 文字コードに変換する。
     ```ruby
     require "bio"
 
