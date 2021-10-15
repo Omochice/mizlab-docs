@@ -23,10 +23,11 @@ parent: 電子情報工学演習B
 ## 使えそうなメソッド
 
 * [`Hash.merge!`](https://docs.ruby-lang.org/ja/latest/class/Hash.html#I_MERGE)
+    `Hash` と `Hash` をマージする。
     ```ruby
     foo = { a: 10, b: 20 }
     bar = { b: 30, c: 40 }
-    foo.merge!(bar) { |_, org, new| org + new }
+    foo.merge!(bar) { |key, foo_value, bar_value| foo_value + bar_value }
     p foo
     # => {a: 10, b: 50, c: 40}
     ```
