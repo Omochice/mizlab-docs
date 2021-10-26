@@ -19,7 +19,7 @@ parent: 電子情報工学演習B
     ```
     vim コマンドで操作します。矢印キーも使えます。
     知っておくとよさそうなものを抜粋すると
-    
+
     |キー|動作|
     |---|---|
     |/\<word\>|`word` を検索|
@@ -44,7 +44,8 @@ parent: 電子情報工学演習B
 
 - gnuplot
     - [ruby の gnuplot ラッパー](https://github.com/ruby-numo/numo-gnuplot)もありますが、ここでは割愛します。興味があればぜひどうぞ。
-    ```txt
+
+    ```
     # "GC contents (%)" "Frequency"
     5 8
     10 12
@@ -57,7 +58,8 @@ parent: 電子情報工学演習B
     95 7
     100 6
     ```
-    ```gpt
+
+    ```
     set nokey
     set ylabel "Freqency"
     set xlabel "GC Contents (%)"
