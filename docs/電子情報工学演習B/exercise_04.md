@@ -21,7 +21,7 @@ posted_at: 2021-10-15
 - リストを出力する
     - エクセルを別途開くのが面倒なので筆者は TSV 形式でデータを出力しました。
 
-## 使えそうなメソッド
+## 使えそうなメソッドなど
 
 * [`Hash.merge!`](https://docs.ruby-lang.org/ja/latest/class/Hash.html#I_MERGE)
     `Hash` と `Hash` をマージする。
