@@ -14,7 +14,7 @@ jobs:
       - name: extract diffs
         uses: technote-space/get-diff-action@v5
         with:
-          PATTERNS: "*.md"
+          PATTERNS: "**/*.md"
       - name: Run sed
         run: |
           files=(${{ env.GIT_DIFF }})
