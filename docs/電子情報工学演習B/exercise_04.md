@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: post
 title: 電子情報工学演習B 第4回
 parent: 電子情報工学演習B
+author: まつもと
+posted_at: 2021-10-15
 ---
 
 # {{ page.title }}
@@ -45,5 +47,5 @@ parent: 電子情報工学演習B
     number = 0.01
     str = "The number is #{number}, It means #{number * 100}%."
     p str
-    # => The number is 1, It means 1.0%
+    # => The number is 0.01, It means 1.0%
     ```
