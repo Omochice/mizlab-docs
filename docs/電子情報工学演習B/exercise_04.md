@@ -11,7 +11,7 @@ posted_at: 2021-10-15
 
 ## 課題
 
-> SwissProt データベース(uniprot_sprot.fasta) 中の各アミノ酸の出現頻度（絶対数およびパーセント値）を求め、出現頻度の降順にソートしてアミノ酸の3文字コード、1文字コードと合わせてリストを作成しなさい。
+> SwissProt データベース(uniprot\_sprot.fasta) 中の各アミノ酸の出現頻度（絶対数およびパーセント値）を求め、出現頻度の降順にソートしてアミノ酸の3文字コード、1文字コードと合わせてリストを作成しなさい。
 
 
 ## 方針
@@ -33,6 +33,7 @@ posted_at: 2021-10-15
     p foo
     # => {a: 10, b: 50, c: 40}
     ```
+
 * [`Bio::Sequence::AA.codes`](http://bioruby.org/rdoc/Bio/Sequence/AA.html#method-i-codes)
     アミノ酸の 1 文字コードを 3 文字コードに変換する。
     ```ruby
@@ -42,6 +43,7 @@ posted_at: 2021-10-15
     p s.codes
     # => ["Arg", "Arg", "Leu", "Glu"]
     ```
+
 * [文字列中での式の展開](https://docs.ruby-lang.org/ja/latest/doc/spec=2fliteral.html#exp)
     ```ruby
     number = 0.01
