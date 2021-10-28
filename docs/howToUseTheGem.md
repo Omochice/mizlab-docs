@@ -94,7 +94,7 @@ $ gem install mizlab
     mapping = { "a" => [1, 1], "t" => [-1, 1], "g" => [-1, -1], "c" => [1, -1] }
     coordinates =  Mizlab.calculate_coordinates(seq, mapping)
 
-    p local_patterns(coordinates[0], coordinates[1])
+    p Mizlab.local_patterns(coordinates[0], coordinates[1])
     # => 長さ512の配列が返ってきます
     ```
 
