@@ -6,3 +6,7 @@
 _site
 Gemfile.lock
 node_modules
+
+code/data
+code/python/*.pdf
+code/ruby/*.pdf
