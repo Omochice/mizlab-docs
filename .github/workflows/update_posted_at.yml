@@ -2,7 +2,7 @@ name: Update `posted_at` automatically
 on:
   push:
     paths:
-      - "**/*.md"
+      - "docs/*.md"
 
 jobs:
   update:
@@ -16,7 +16,7 @@ jobs:
       - name: Extract diffs
         uses: technote-space/get-diff-action@v5
         with:
-          PATTERNS: "**/*.md"
+          PATTERNS: "docs/*.md"
       - name: Run sed
         if: env.GIT_DIFF
         run: |
