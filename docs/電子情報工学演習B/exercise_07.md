@@ -30,25 +30,9 @@ posted_at: 2021-11-12
 
 - `window_search`
 
-    Bioruby のドキュメントでは `Bio::Sequence` が返ってくると書いていますが、`String` が返ってくるので注意。(おそらく Ruby のバージョン更新による変更)
-    確認した環境は以下の通り。
+    Ruby のバージョンが `3` であり、かつ `bio` のバージョンが `2.0.3` 未満の場合、 `window_search` の返り値のクラスが `String` になります。
+    `2.0.3` で修正されたため、この問題が起こった場合は `gem update bio` アップデートしてください。
 
-    ```sh
-    $ ruby --version
-    ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-linux]
-
-    $ gem list | grep bio
-    bio (2.0.2)
-    ```
-    
-    ```ruby
-    require "bio"
-    
-    dna = Bio::Sequence.new("atgcatgc")
-    dna.widnow_search(3, 1) do |codon|
-        p codon.class # => String
-    end
-    ```
 
 - `Numo-gnuplot`
     
