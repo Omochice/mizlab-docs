@@ -7,7 +7,7 @@ posted_at: 2021-10-28
 
 # {{ page.title }}
 
-_v0.1.6 時点での解説です。_
+_v0.1.7 時点での解説です。_
 
 研究室用でよく使われるであろう作業を簡単に扱う gem を作成したので、以下に使い方をまとめます。
 
@@ -97,5 +97,33 @@ $ gem install mizlab
     p Mizlab.local_patterns(coordinates[0], coordinates[1])
     # => 長さ512の配列が返ってきます
     ```
+
+- `Blast`
+    `Blast+` を実行するためのクラスです。
+    `Bio::Blast` では legacy blast を実行しようとする (`blastall -p ~`) ため、 `blastall` が実行できない環境での代替になります。
+
+    - `query`
+        `blast+` を実行します。
+
+        ```ruby
+        require "mizlab"
+        require "bio"
+        
+        query = nil
+        Bio::FlatFile.auto("query.fasta").each_entry do |e|
+          query = e.seq
+        end
+
+        factory = Mizlab::Blast.new("blastp", "uniprot_sprot.fasta")
+        res = factory.query(query, { "-num_descriptions" => 8, "-num_alignments" => 7 })
+
+        r = 0
+        res.each_hit do |hit|
+          r += 1
+        end
+        p r  # => 7
+        ```
+
+        コンストラクタに渡すデータベースファイル (例では `uniprot_sprot.fasta`) は先に `makeblastdb` しておく必要があります。
 
 より詳しい内容（引数の型など）については[ここ](https://mizlab.github.io/Mizlab-ruby/Mizlab.html)を参考にしてください。
