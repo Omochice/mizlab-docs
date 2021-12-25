@@ -2,7 +2,7 @@
 layout: post
 title: 研究室用gemの使い方
 author: まつもと
-posted_at: 2021-11-25
+posted_at: 2021-12-25
 ---
 
 # {{ page.title }}
