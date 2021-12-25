@@ -49,7 +49,7 @@ posted_at: 2021-12-25
     (y_i - \overline{y})^2}}
     $$
 
-    これをRubyで書くと次のようになるでしょう。
+    これを Ruby で書くと次のようになるでしょう。
     
     ```ruby
     def correlation_coefficient(x, y)
