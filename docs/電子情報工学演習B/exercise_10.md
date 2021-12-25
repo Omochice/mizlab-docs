@@ -16,13 +16,13 @@ posted_at: 2021-12-25
 
 今回はコマンドラインで動くツールを使った課題なので、`ruby`を使わなくてもできます。
 
-（というより`bioruby`に`blastp`を実行するクラス等が調べた限りでは存在しないようです。）
+（というより `bioruby` に `blastp` を実行するクラス等が調べた限りでは存在しないようです。）
 
-`ruby`で完結させたい人向けに、[MizLab/Mizlab-ruby](https://github.com/MizLab/Mizlab-ruby)で`blastp`と同等の処理をする方法を以下に示します。
+`ruby`で完結させたい人向けに、[MizLab/Mizlab-ruby](https://github.com/MizLab/Mizlab-ruby)で `blastp` と同等の処理をする方法を以下に示します。
 
-- DBファイルの作成
+- DB ファイルの作成
 
-    コマンドラインで`makeblastdb`を実行することでそのファイルと同じ階層にblast用のファイルが生成されるようです。
+    コマンドラインで `makeblastdb` を実行することでそのファイルと同じ階層に blast 用のファイルが生成されるようです。
     `ruby`のプログラム中でシェルコマンドを実行するには[`open3`](https://docs.ruby-lang.org/ja/latest/class/Open3.html)が使えます。
     (ただ、今回の場合は素直にシェルで実行したほうがいいかもしれません。)
 
@@ -41,8 +41,8 @@ posted_at: 2021-12-25
 
 - `blastp`の実行
     
-    `Mizlab`モジュールには`blast`をローカル環境で実行するためのクラス`Mizlab::Blast`があります。
-    これを使うことで`blast`の結果を[`Bio::Blast::Report`](http://bioruby.org/rdoc/Bio/Blast/Report.html)として得られます。
+    `Mizlab`モジュールには `blast` をローカル環境で実行するためのクラス `Mizlab::Blast` があります。
+    これを使うことで `blast` の結果を[`Bio::Blast::Report`](http://bioruby.org/rdoc/Bio/Blast/Report.html)として得られます。
 
     ```ruby
     require "bio"
